@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/feda.css" />
+    <style>
+      :root {
+        --brand: #0d6efd;
+      }
+      body {
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+      .hero {
+        background: linear-gradient(
+          90deg,
+          rgba(13, 110, 253, 0.08),
+          rgba(13, 110, 253, 0.03)
+        );
+      }
+      .feature-icon {
+        font-size: 2rem;
+      }
+      .card-img-top {
+        object-fit: cover;
+        height: 180px;
+      }
+      footer {
+        background: #0b1220;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">SizningBrend</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Bosh sahifa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#xizmat">Xizmatlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aloqa">Aloqa</a>
+            </li>
+          </ul>
+          <a class="btn btn-primary ms-lg-3" href="#aloqa">Buyurtma berish</a>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero py-5">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold">Bootstrap 5 bilan zamonaviy sayt</h1>
+            <p class="lead text-muted">
+              Oddiy, tez va mobil moslashtirilgan veb-sahifa. Sizning
+              biznesingiz uchun bosh sahifa, xizmatlar, portfolio va aloqa
+              formasi tayyor.
+            </p>
+            <a href="#xizmat" class="btn btn-outline-primary btn-lg me-2"
+              >Xizmatlarimiz</a
+            >
+            <a href="#aloqa" class="btn btn-primary btn-lg">Bog'lanish</a>
+          </div>
+          <div class="col-lg-6 text-center mt-4 mt-lg-0">
+            <img src="/icon-botsrap-1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="xizmat" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Nima qilamiz</h2>
+          <p class="text-muted">
+            Bizning asosiy xizmatlar — veb-dizayn, rivojlantirish va
+            qo'llab-quvvatlash.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="mb-3 feature-icon">
+                  <svg
+                    class="icon"
+                    dataSlot="icon"
+                    fill="none"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                    />
+                  </svg>
+                </div>
+                <h5 class="card-title">Tezkor saytlar</h5>
+                <p class="card-text text-muted">
+                  Yuqori tezlik va SEO-ga moslashgan saytlar yaratamiz.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="mb-3 feature-icon">
+                  <svg
+                    class="icon"
+                    dataSlot="icon"
+                    fill="none"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
+                    />
+                  </svg>
+                </div>
+                <h5 class="card-title">Design & UI/UX</h5>
+                <p class="card-text text-muted">
+                  Jozibador interfeys va qulay foydalanuvchi tajribasi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                <div class="mb-3 feature-icon">
+                  <svg class="icon"
+                    dataSlot="icon"
+                    fill="none"
+                    strokeWidth="{1.5}"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                    />
+                  </svg>
+                </div>
+                <h5 class="card-title">Texnik qo'llab-quvvatlash</h5>
+                <p class="card-text text-muted">
+                  Xatoliklarni tuzatish va muntazam yangilash xizmati.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold">So'nggi ishlar</h3>
+          <a class="btn btn-sm btn-outline-secondary" href="#"
+            >Hammasini ko'rish</a
+          >
+        </div>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="/icon-botsrap-1.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Loyiha 1</h5>
+                <p class="card-text text-muted">
+                  Qisqacha tavsif va texnologiyalar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="/icon-botsrap-1.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Loyiha 2</h5>
+                <p class="card-text text-muted">
+                  Qisqacha tavsif va texnologiyalar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="/icon-botsrap-1.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title">Loyiha 3</h5>
+                <p class="card-text text-muted">
+                  Qisqacha tavsif va texnologiyalar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aloqa" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h3 class="fw-bold">Aloqa</h3>
+            <p class="text-muted">
+              Savollar bo'lsa, formani to'ldiring yoki elektron pochta bilan
+              murojaat qiling.
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <svg
+                  class="icon"
+                  dataSlot="icon"
+                  fill="none"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="icon"
+                  dataSlot="icon"
+                  fill="none"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+              </li>
+              <li>
+                <svg
+                  class="icon"
+                  dataSlot="icon"
+                  fill="none"
+                  strokeWidth="{1.5}"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Ism</label>
+                <input type="text" class="form-control" id="name" required />
+                <div class="invalid-feedback">Iltimos ismingizni kiriting.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+                <div class="invalid-feedback">To'g'ri email kiriting.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Xabar</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Xabar yozing.</div>
+              </div>
+              <button class="btn btn-primary" type="submit">Yuborish</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          © <span id="yr"></span> SizningBrend. Barcha huquqlar himoyalangan.
+        </div>
+        <div>
+          <a href="#" class="text-white me-3">Privacy</a>
+          <a href="#" class="text-white">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("yr").textContent = new Date().getFullYear();
+      (function () {
+        "use strict";
+        var forms = document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              } else {
+                event.preventDefault();
+                var btn = form.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.textContent = "Yuborildi";
+                setTimeout(function () {
+                  btn.disabled = false;
+                  btn.textContent = "Yuborish";
+                  form.reset();
+                }, 1500);
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
